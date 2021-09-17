@@ -4,7 +4,7 @@
             <div class="col-lg-6">
                 <div class="card1 pb-5">
                     <div class="row px-3 justify-content-center mt-4 mb-5 border-line"> <img
-                            src="https://cdn.dribbble.com/users/1292677/screenshots/6139167/avento.gif" class="image">
+                            src="https://www.spectrum-markets.com/sites/default/files/inline-images/Diagram%201_Transparent_BK%20%282%29.gif" class="image">
                     </div>
                 </div>
             </div>
@@ -14,13 +14,15 @@
                         <label class="mb-1">
                             <h5 class="mb-0">Custodian ID</h5>
                         </label>
-                        <input class="mb-4" type="text" name="email" autocomplete="off" placeholder="Enter Custodian ID" size="40">
+                        <input class="mb-4" type="text" name="email" autocomplete="off" 
+                        placeholder="Enter Custodian ID" size="40" [(ngModel)]="custodianid">
                     </div>
                     <div class="row px-3">
                         <label class="mb-1">
                             <h5 class="mb-0">Password</h5>
                         </label>
-                        <input class="mb-4" type="password" name="password" placeholder="Enter Password" size="40">
+                        <input class="mb-4" type="password" name="password" 
+                        placeholder="Enter Password" size="40" [(ngModel)]="password">
                     </div>
                     <div class="row mb-3 px-3 pad"> 
                         <button type="submit" class="btn btn-blue text-center">LOGIN</button>

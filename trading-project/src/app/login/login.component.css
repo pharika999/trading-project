@@ -1,77 +1,133 @@
-body {
-    margin: 0;
-    padding: 0;
-    font-family: sans-serif;
-    background: linear-gradient(to right, #b92b27, #1565c0)
+
+.card0 {
+    box-shadow: 20px 29px 22px 0px rgba(0,0,0,0.51);
+    -webkit-box-shadow: 20px 29px 22px 0px rgba(0,0,0,0.51);
+    -moz-box-shadow: 20px 29px 22px 0px rgba(0,0,0,0.51);
+    margin-top:4%;
+    margin-left: 10%;
+    margin-right: 10%;
 }
 
-.card {
-    margin-bottom: 20px;
-    border: none
+.card2 {
+    margin: 0px 40px;
+    border: 2px solid gray;
 }
-
-.box {
+.image {
     width: 500px;
-    padding: 30px;
-    position: absolute;
-    background: #191919;
-    text-align: center;
-    transition: 0.25s;
-    margin-top: 40px;
-    margin-left: 25%;
+    height: 400px
 }
 
-.box input[type="text"],
-.box input[type="password"] {
-    border: 0;
-    background: none;
-    display: block;
-    margin: 20px auto;
-    text-align: center;
-    border: 2px solid #3498db;
-    padding: 10px 10px;
-    width: 250px;
-    outline: none;
-    color: white;
-    border-radius: 24px;
-    transition: 0.25s
+.border-line {
+    border-right: 1px solid #EEEEEE
+}
+.line {
+    height: 1px;
+    width: 45%;
+    background-color: #E0E0E0;
+    margin-top: 10px
+}
+/* ::placeholder {
+    color: #BDBDBD;
+    opacity: 1;
+    font-weight: 300
 }
 
-.box h1 {
-    color: white;
-    text-transform: uppercase;
-    font-weight: 500
+:-ms-input-placeholder {
+    color: #BDBDBD;
+    font-weight: 300
 }
 
-.box input[type="text"]:focus,
-.box input[type="password"]:focus {
-    width: 300px;
-    border-color: #2ecc71
+::-ms-input-placeholder {
+    color: #BDBDBD;
+    font-weight: 300
+} */
+label{
+    padding-bottom: 10px;
 }
 
-.box input[type="submit"] {
-    border: 0;
-    background: none;
-    display: block;
-    margin: 20px auto;
-    text-align: center;
-    border: 2px solid #2ecc71;
-    padding: 14px 40px;
-    outline: none;
-    color: white;
-    border-radius: 24px;
-    transition: 0.25s;
+input,
+textarea {
+    padding: 10px 12px 10px 12px;
+    border: 1px solid lightgrey;
+    border-radius: 2px;
+    margin-bottom: 5px;
+    margin-top: 2px;
+    width: 100%;
+    box-sizing: border-box;
+    color: #2C3E50;
+    font-size: 14px;
+    letter-spacing: 1px;
+}
+
+input:focus,
+textarea:focus {
+    -moz-box-shadow: none ;
+    -webkit-box-shadow: none ;
+    box-shadow: none ;
+    border: 1px solid #304FFE;
+    outline-width: 0
+}
+
+button:focus {
+    -moz-box-shadow: none ;
+    -webkit-box-shadow: none ;
+    box-shadow: none ;
+    outline-width: 0
+}
+
+a {
+    color: inherit;
     cursor: pointer
 }
 
-.box input[type="submit"]:hover {
-    background: #2ecc71
+.btn-blue {
+    width: 170px;
+    color: #fff;
+    border-radius: 2px;
+    font-weight: bolder;
+    background-image: linear-gradient(to right, #54ad58, #74ae41, #93ac2a);
+
 }
 
-.forgot {
-    text-decoration: underline
+.btn-blue:hover {
+    background-color: #000;
+    cursor: pointer
 }
-/* .container{
-    position: absolute;
-    left: 30%;
-} */
+
+.bg-blue {
+    color: #fff;
+    background-color: #1A237E
+}
+
+@media screen and (max-width: 991px) {
+    .logo {
+        margin-left: 0px
+    }
+
+    .image {
+        width: 300px;
+        height: 220px
+    }
+
+    .border-line {
+        border-right: none
+    }
+
+    .card2 {
+        border-top: 1px solid #EEEEEE;
+        margin: 0px 15px
+    }
+}
+
+div{
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.pad{
+    padding-top: 20px;
+}
+.gradient{
+    background-image: linear-gradient(to right, #54ad58, #74ae41, #93ac2a, #b2a912, #d2a300, #e09900, #ee8e0c, #fb811d, #f87126, #f4612d, #ee5035, #e73f3b);
+}
